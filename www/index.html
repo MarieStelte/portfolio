@@ -1,60 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Portfolio</title>
-    <meta charset="utf-8">
-<body>
-    <header>
-        <h1>Marie Sophie Stelte</h1>
-        <!-- About, Contact -->
 
-        <nav>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    {{> header}}
     <main>
-        <div>
-            <a href="/projekt-1">
-                <img src="schokolade_2.jpg">
-            </a>
-        </div>
-       
-        <div>
-            <a href="/projekt-2">
-                <img src="001_plakatkampagne.jpg">
-            </a>
-        </div>
-        
-        <div> 
-            <a href="/projekt-3">
-                <img src="protlab.jpeg">
-            </a>
-        </div>
-        <div>
-            <a href="/projekt-4">
-            <img src="IMG_0028.jpg">
-            </a>
-        </div>
-        <div>
-            <a href="/projekt-4">
-            <img src="alleswirdgut.jpg">
-        </a>
-        </div>
+            
+            
+    {{#section projecte multiple=true}}
     <div>
-        <a href="/projekt-5">
-        <img src="pikto_farbe_lozzi.jpg">
-    </a>
-    </div>
-        <!-- About Structure -->
-        <ul>
-            <li><img src="#"></li>
-            <li><img src="#"></li>
-        </ul>
+        <a href="{{_permalink}}">
+         {{bild  type=image}}
+        
+         
+    
+        </a>
+        
+    
+    </div> 
+    {{/section}}
 
     </main>
-</body>
-</head>
-</html>
+
+
+{{> footer}}
